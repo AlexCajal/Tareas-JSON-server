@@ -1,3 +1,5 @@
+import { post } from "./peticiones.js";
+
 
 
 document.addEventListener("DOMContentLoaded", validacion);
@@ -130,12 +132,20 @@ function validarCondiciones(){
 }
 function enviarForm(){
     let usuario = {
-        nombre: document.getElementById("nombre"),
-        apellidos: document.getElementById("apellidos"),
-        email: document.getElementsByTagName("email"),
-        pass: document.getElementById("password"),
-        condiciones: document.getElementById("condiciones"),
+        nombre: document.getElementById("nombre").value,
+        apellidos: document.getElementById("apellidos").value,
+        email: document.getElementsByTagName("email").value,
+        pass: document.getElementById("password").value,
+        condiciones: document.getElementById("condiciones").value,
     }
+
+    post("/usuarios",usuario,funciona,error);
+}
+function error(){
+    console.log("fallo");
+}
+function funciona(){
+    console.log("acierto");;
 }
 
 
