@@ -14,7 +14,7 @@ export function get(ruta, callback, callbackError) {
 
 
 }
-export function post(ruta, datosUsuario, callback, callbackError) {
+export function post(ruta, obj, callback, callbackError) {
 
     const cabecera = new Headers();
     cabecera.append("Content-Type", "application/json");
@@ -22,7 +22,7 @@ export function post(ruta, datosUsuario, callback, callbackError) {
     const enivarDatos = {
         method: "POST",
         headers: cabecera,
-        body: JSON.stringify(datosUsuario)
+        body: JSON.stringify(obj)
     }
 
     fetch(URL_SERVER + ruta, enivarDatos)

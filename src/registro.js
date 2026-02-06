@@ -1,4 +1,4 @@
-import { post } from "./peticiones";
+
 
 document.addEventListener("DOMContentLoaded", validacion);
 
@@ -129,7 +129,13 @@ function validarCondiciones(){
     return true;
 }
 function enviarForm(){
-    
+    let usuario = {
+        nombre: document.getElementById("nombre"),
+        apellidos: document.getElementById("apellidos"),
+        email: document.getElementsByTagName("email"),
+        pass: document.getElementById("password"),
+        condiciones: document.getElementById("condiciones"),
+    }
 }
 
 
