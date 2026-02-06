@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do</title>
+    <script src="./src/registro.js" defer></script>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <h1>Registro nuevo usuario</h1>
     <main>
         <form id="formRegistro">
-            Nombre (*): <input type ="text" id="nombre"/><span class="resaltado" id="errorNombre"></span><br>
-            Apellidos (*): <input type="text" id="apellidos"/><span class="resaltado" id="errorApellidos"></span><br>
-            Email: <input type="text" id="email"><span class="resaltado" id="errorEmail"></span><br>
-            Repetir Email: <input type="text" id="repetirEmail"><span class="resaltado" id="errorRepetirEmail"></span><br>
-            Password (*): <input type="password" id="password"><span class="resaltado" id="errorPassword"></span><br>
-            Repetir Password (*): <input type="password" id="repetirPassword"><span class="resaltado" id="errorRepetirPassword"></span>
-            Acepto las condiciones del servicio: <input type="checkbox"   id="condiciones"/><span id="errorCondiciones" class="resaltado"></span><br>
+            Nombre (*): <input type ="text" id="nombre"/><span id="errorNombre"></span><br>
+            Apellidos (*): <input type="text" id="apellidos"/><span id="errorApellidos"></span><br>
+            Email: <input type="text" id="email"><span id="errorEmail"></span><br>
+            Repetir Email: <input type="text" id="repetirEmail"><span id="errorRepetirEmail"></span><br>
+            Password (*): <input type="password" id="password"><span id="errorPassword"></span><br>
+            Repetir Password (*): <input type="password" id="repetirPassword"><span  id="errorRepetirPassword"></span><br>
+            Acepto las condiciones del servicio: <input type="checkbox"   id="condiciones"/><span id="errorCondiciones" ></span><br>
             Deseas recibir novedades: <input type="checkbox"  id="news"/><br>
-            <button id="btnRegistrarUsuario">Registrar usuario</button><span class="resaltado" id="errorRegistro"></span>
+            <button id="btnRegistrarUsuario">Registrar usuario</button><span id="errorRegistro"></span>
         </form>
     </main>
     

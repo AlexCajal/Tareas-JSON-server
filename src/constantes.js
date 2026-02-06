@@ -1,0 +1,1 @@
+export const URL_SERVER = "http://54.166.226.27:3000"; 
